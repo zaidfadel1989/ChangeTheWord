@@ -1,0 +1,143 @@
+.everything {
+  width: 100%;
+}
+p{
+  font-size: 15px !important;
+}
+input[name="search"] { /**   This is for Search bar   */
+ 
+  border-color: rgba(226, 33, 33, 0.8) !important;
+    box-shadow: 0 2px 2px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(229, 103, 23, 0.6);
+    outline: 0 none;
+  
+  width: 220px;
+  /* -webkit-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out; */
+  -webkit-transition: height 1s ease-in-out;
+  transition: height 1s ease-in-out;
+  position: relative;
+  text-align: center;
+  /* margin: auto; */
+  left: 24%;
+  height: 20px;
+  outline: 0 none;
+  /* border-color: red 1px solid !important; */
+  font-size: 13pt;
+}
+input[name="search"]:focus {
+  /* width: 300px; */
+  height: 40px;
+}
+.buttonss {   /**   This is for Search button oh Home page   */
+  border-color: rgba(202, 47, 8, 0.8);
+    box-shadow: 0 3px 3px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(229, 103, 23, 0.6);
+    outline: 0 none;
+ position: relative;
+ margin: 5px;
+ left: 40%;
+ margin-bottom: 0px; 
+ border-radius: 19px;
+ /* border: black 0.5px solid; */
+ background: bisque;
+ backdrop-filter: blur(13px);
+ outline: none;
+ /* box-shadow: 0px 0px 15px black; */
+ font-size: 20px;
+}
+
+/* .homePage{
+  margin-top: 70px !important;
+} */
+.box {    /**   This is for ?  */
+  border: 3px solid #d7d7d7;
+  cursor: pointer;
+  height: 250px;
+  margin: 15px;
+  overflow: hidden;
+  width: 45%;
+  font-size: 15px;
+}
+
+.box:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transform: scale(1.05);
+  transition: 0.1s;
+}
+
+.box-img-top {
+  border-radius: 0;
+
+  height: 150px !important;
+}
+
+.box-height {
+  width: 100% !important;
+}
+
+
+.overflowTest { /**This is for Home page Apt's border*/
+  padding: 15px;
+  width: 100%;
+  height: 600px;
+  overflow: scroll;
+  border: 0.4px solid whitesmoke;
+  border-radius: 15px;
+  backdrop-filter: blur(1px);
+  /* border: 1px solid #ccc; */
+}
+.mywrapper { /** Inside Home page Apt frames*/
+  padding-top: 50px;
+  height: 620px !important;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0;
+  justify-content: space-around;
+  align-content: flex-start;
+  overflow: auto;
+  background: transparent;
+
+  border: white;
+}
+
+.center {
+  margin: center;
+  width: 100%;
+}
+
+.row {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.list {
+  position: relative;
+  display: block;
+  margin-bottom: -1px;
+  /* background-image: url('https://cdn.pixabay.com/photo/2017/11/04/21/09/textile-2918844_960_720.jpg'); */
+  background-image: url("./paper-1990111.jpg");
+  background-size: cover;
+  color: black;
+  border: 0 solid rgba(0, 0, 0, 0.125);
+  border-radius: 10px;
+}
+
+
+/*? Media Query begins here*/
+
+@media screen and (max-width: 390px) {
+ .mywrapper {
+ 
+  height: 320px !important;
+ width: 720px !important;
+  }
+  .overflowTest{
+    height: 340px;
+  }
+}
+

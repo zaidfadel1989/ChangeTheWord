@@ -1,0 +1,86 @@
+body {
+  background: url(./sea-s.jpg) !important;
+  background-size: cover;
+  backdrop-filter: blur(0px);
+  background-color: red;
+  font-size: 2rem !important;
+}
+
+.coloring { /*! color of the Navbar texts*/
+  color: aliceblue;
+  text-shadow:  0px 0px 8px  #b90303;
+  font-size: 20pt;
+  padding: 0;
+  margin-left: 5px;
+  font-family: Comic Sans MS Header;
+  height: 35px;
+  position: relative;
+  bottom: 7px;
+}
+.c-logout {
+  color: antiquewhite;
+}
+.App {
+  text-align: center;
+}
+
+.navbar {
+  border-bottom: 2px solid black;
+  /* padding: 0; */
+  height: 60px;
+  margin: 0;
+  background: transparent;
+}
+
+section[name=lg]{ /*! Navbar after log in. line 43-49 navbar.js*/
+  position: relative;
+bottom: 29px !important;
+} 
+.nav-link-logout{ 
+  position: relative;
+  float: right;
+  left: 1100%;
+  bottom: 18px;
+ 
+  /* margin-left: 1150px; */
+  font-size: 17pt;
+}
+ .nav-link {
+position: relative;
+right: 5%;
+font-size: 20pt;
+bottom: 18px;
+ }
+/*! End of nav after log in*/
+.backgrounds {
+  position: absolute;
+  width: 100%;
+  background: transparent;
+  /* background-image: url(../src/components/Styles/Images/chicago-2236702.jpg);
+      background-size:  contain; */
+  /* background: transparent; */
+  backdrop-filter: blur(1px);
+}
+
+.tagName { /*? Welcome tag. App.js line 78. */
+  margin: auto;
+  position: relative;
+  text-align: center;
+  color: lightgoldenrodyellow;
+  top: 60px;
+  font-size: 20pt !important;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* left: 45%; */
+}
+.nav-link-logout {
+  color: whitesmoke;
+}
+
+@media screen and (max-width: 415px) {
+  .navbar-section {
+    color: greenyellow;
+    text-align: center;
+    margin-top: 8px;
+    position: absolute;
+  }
+}

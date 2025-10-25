@@ -1,0 +1,214 @@
+.buttne{/*? + and - button in spPage Calc. line 88-90 individualPage.js*/
+border-radius: 100%;
+background: wheat;
+width: 29px;
+font-size: 20px;
+height: 30px;
+}
+
+.inputne{/*? specPage for days input. check indv.js*/
+height: 25px;
+width: 50px !important;
+text-align: center;
+font-size: 12pt;
+}
+.buttne-1{
+  border-radius: 100%;
+background: #f5deb3;
+width: 29px;
+font-size: 20px;
+height: 30px;
+}
+/*?End of button style for calc*/
+
+.title-of{/*? Title line 72 in indPage.js*/
+color: lightgoldenrodyellow;
+}
+img {
+  width: auto;
+  height: auto;
+  margin-top: 30px;
+}
+/* img:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+} */
+.all {
+  padding: 5px 5px;
+  width: 1200px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+ 
+}
+p{
+  font-size: 20px;
+}
+.right {
+  float: right !important;
+}
+/* Image zoom on hover + Overlay colour */
+.parent {
+  width: 100%;
+  margin: 20px;
+  height: 400px;
+  border: 1px;
+  overflow: hidden;
+  position: relative;
+
+  display: inline-block;
+  cursor: pointer;
+}
+
+.child {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.parent:hover .child,
+.parent:focus .child {
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.parent:hover .child:before,
+.parent:focus .child:before {
+  display: block;
+}
+
+.parent:hover a,
+.parent:focus a {
+  display: block;
+}
+
+.child:before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* background-color: rgba(52,73,94,0.75); */
+}
+
+/**! This line below is for Modal style only*/
+/*? for modal frame go to index.js inside the Modal folder*/
+
+/*? Modal inputs*/
+input[type=text]{
+border-radius:  15px;
+font-size:12pt;
+margin: 3px;
+outline: none;
+border: 0.5px solid black;
+
+}
+input[type=tel]{
+  border-radius:  15px;
+  font-size:12pt;
+  outline: none;
+  margin: 3px;
+  border: 0.5px solid black;
+}
+textarea[name=message]{
+  border: 0.5px solid black;
+  border-radius:  15px;
+  margin-top: 3px;
+  font-size: small;
+  width: 200px;
+  outline: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+button[type=subnits]{
+  border: 0.6px solid black;
+  border-radius: 4px;
+  float: right;
+  margin: 0;
+  font-size: small;
+  background: lightgoldenrodyellow;
+}
+/*t type="text"
+l for="phone"
+ id="phonenum
+for="message"*/
+/*! modal ends here*/
+
+
+
+
+.hello {
+  display: none;
+}
+
+.framing-calc{
+  border: 1px solid black;
+  height: 150px;
+  padding: 10px;
+position: fixed;
+  text-align: center;
+  left: 5%;
+  /* border: 0.5px solid white; */
+  /* width: 250px; */
+  /* float: right; */
+  /* margin-bottom:  40px;
+  margin-right: 10px; */
+  /* padding: 3px; */
+  border-radius: 15px;
+  background: transparent;
+  box-shadow: 0px 0px 60px rgb(46, 43, 43);
+  backdrop-filter: blur(2px);
+  color: white;
+}
+
+/* ? style for "specificPage" after the image content */
+.after-image {
+  color: white;
+}
+
+.host{
+  height: auto;
+  border: 1px solid black;
+}
+  /* ? style for "specificPage" after the image content */
+  .after-image{ 
+color: white;
+  }
+  .calensdar{
+    width: 100%;
+    height: auto;
+  }
+  .scrols { /*? This is spPage right column main body and border. line 130 indPage.js*/
+    margin-top: 18px;
+    padding: 15px;
+    width: 100%;
+    height: 950px;
+    overflow: scroll;
+    border: 0.8px solid white;
+    border-radius: 15px;
+    backdrop-filter: blur(1px);
+  
+  
+    /* border: 1px solid #ccc; */
+  }
+
+/*! Media Queries */
+  @media screen and (max-width: 960px) {
+    .parent {
+      width: 100%;
+      margin: 20px 0px;
+    }
+    .all {
+      padding: 20px 20px;
+    }
+  }

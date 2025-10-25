@@ -1,0 +1,52 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@datepicker-react/hooks": "^2.1.4",
+    "@datepicker-react/styled": "^2.1.4",
+    "@emotion/core": "^10.0.22",
+    "@trendmicro/react-modal": "^3.0.0",
+    "axios": "^0.19.0",
+    "bootstrap": "^4.3.1",
+    "google-maps-react": "^2.0.2",
+    "indicative": "^7.2.3",
+    "react": "^16.12.0",
+    "react-bootstrap": "^1.0.0-beta.14",
+    "react-dates": "^21.5.0",
+    "react-dom": "^16.11.0",
+    "react-geocode": "^0.2.1",
+    "react-google-autocomplete": "^1.1.2",
+    "react-google-maps": "^9.4.5",
+    "react-native": "^0.61.4",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.2.0",
+    "reactstrap": "^8.1.1",
+    "save": "^2.4.0",
+    "spectre.css": "^0.5.8",
+    "styled-components": "^4.4.1"
+  },
+  
+  "scripts": {
+    "start": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:8080"
+}
