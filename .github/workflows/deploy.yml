@@ -5,7 +5,6 @@ on:
     branches: [ "main" ]
   workflow_dispatch:
 
-
 permissions:
   contents: read
   pages: write
@@ -48,4 +47,4 @@ jobs:
           cd client
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          npx gh-pages -d build -r https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/zaidfadel1989/ChangeTheWord.git
+          npx gh-pages -d build -b gh-pages -r https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/zaidfadel1989/ChangeTheWord.git
