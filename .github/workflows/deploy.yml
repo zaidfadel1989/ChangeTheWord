@@ -40,6 +40,4 @@ jobs:
       - name: Deploy to GitHub Pages
         run: |
           cd client
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
-          npx gh-pages -d build -r https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/zfadel989/test.git
+          npx gh-pages -d build -r https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/zaidfadel1989/ChangeTheWord.git
