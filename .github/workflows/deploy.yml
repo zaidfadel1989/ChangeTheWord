@@ -1,33 +1,41 @@
-name: Deploy React app to GitHub Pages
+name: Build and Deploy React App
 
 on:
   push:
-    branches: ["main"]
+    branches: [ "main" ]
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
+    env:
+      NODE_OPTIONS: --openssl-legacy-provider
+
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Setup Node.js
+      - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: "18"
+          node-version: 18
 
-      - name: Install dependencies
-        working-directory: ./client
-        run: npm install
+      - name: Install root deps
+        run: npm install --legacy-peer-deps
 
-      - name: Build React app
-        working-directory: ./client
-        run: npm run build
+      - name: Install client deps
+        run: |
+          cd client
+          npm install --legacy-peer-deps
+
+      - name: Build client
+        run: |
+          cd client
+          npm run build
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./client/build
+        run: |
+          npm install -g gh-pages
+          cd client
+          gh-pages -d build -u "github-actions-bot <support@github.com>"
