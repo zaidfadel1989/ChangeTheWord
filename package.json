@@ -52,10 +52,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/zaid.fadel89/ChangeTheWord.git"
+    "url": "git://github.com/zaid.fadel1989/ChangeTheWord.git"
   },
   "bugs": {
-    "url": "https://github.com/zaid.fadel89/ChangeTheWord/issues"
+    "url": "https://github.com/zaid.fadel1989/ChangeTheWord/issues"
   },
   "devDependencies": {
     "gh-pages": "^5.0.0",
