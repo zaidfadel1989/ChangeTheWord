@@ -43,8 +43,8 @@ jobs:
           npm run build
 
       - name: Deploy to GitHub Pages
-        run: |
-          cd client
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
-          npx gh-pages -d build -b gh-pages -r https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/zaidfadel1989/ChangeTheWord.git
+        uses: peaceiris/actions-gh-pages@v6
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./client/build
+          publish_branch: gh-pages
