@@ -39,6 +39,7 @@ jobs:
 
       - name: Deploy to GitHub Pages
         run: |
-          npm install -g gh-pages
           cd client
-          gh-pages -d build -u "github-actions-bot <support@github.com>"
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          npx gh-pages -d build -r https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/zfadel989/test.git
