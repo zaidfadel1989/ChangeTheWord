@@ -10,6 +10,17 @@ This Web application helps user finding the perfect rental apartments. Also you 
 
 [Live Link](https://zaidfadel89.github.io/ChangeTheWord/)
 
+
+
+
+## how to run 
+npm install --legacy-peer-deps
+cd client
+npm install --legacy-peer-deps
+cd ..
+npm start
+
+
 ## Login Page 
 
 ![login](./image/2.png)
