@@ -1,12 +1,9 @@
-
-````markdown
 # ChangeTheWord
 
-[Live Demo](https://zaidfadel1989.github.io/ChangeTheWord/)
+[Demo](https://zaidfadel1989.github.io/ChangeTheWord/)
 
 ChangeTheWord is a React-based web application that allows users to search, view, and interact with locations and information in a simple, responsive interface.
 
----
 
 ## Features
 
