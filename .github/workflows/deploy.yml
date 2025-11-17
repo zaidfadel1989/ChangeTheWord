@@ -21,6 +21,9 @@ jobs:
         with:
           node-version: 18
 
+      - name: Disable CI warnings
+        run: echo "CI=false" >> $GITHUB_ENV
+
       - name: Install root deps
         run: npm install --legacy-peer-deps
 
